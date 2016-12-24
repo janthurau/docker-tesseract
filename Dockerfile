@@ -27,8 +27,8 @@ RUN git clone https://github.com/tesseract-ocr/tesseract.git \
 			&& make install \
 			&& cd .. \
 		&& git clone https://github.com/tesseract-ocr/tessdata.git \
-		    && git checkout 3.04.00
 			&& cd tessdata \
+		    && git checkout 3.04.00
 			&& mv * /usr/local/share/tessdata/ \
 			&& cd .. \
 		&& rm -rf tesseract tessdata /var/cache/apk/*
